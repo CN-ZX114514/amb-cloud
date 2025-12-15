@@ -1,110 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>示例网站 - HTML + CSS + JS</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <title>AMB云</title>
+  <style>
+    body {
+      background: #f6f8fa;
+      font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;
+      padding: 40px;
+    }
+    .container {
+      background: #fff;
+      padding: 24px 36px;
+      border-radius: 12px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+    .copy-box {
+      background: #f0f4f8;
+      border: 1px solid #d1d5da;
+      border-radius: 6px;
+      padding: 16px;
+      margin-bottom: 14px;
+      color: #2d3748;
+      font-size: 18px;
+      position: relative;
+      word-break: break-all;
+    }
+    button.copy-btn {
+      background: #3182ce;
+      color: #fff;
+      padding: 8px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.2s;
+      margin-top: 4px;
+    }
+    button.copy-btn:hover {
+      background: #2563eb;
+    }
+    .copied-tip {
+      color: #16a34a;
+      font-size: 13px;
+      margin-top: 6px;
+      display: none;
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="#">MySite</a>
-      <nav class="nav" id="nav">
-        <a href="#home">首页</a>
-        <a href="#features">功能</a>
-        <a href="#gallery">画廊</a>
-        <a href="#contact">联系</a>
-      </nav>
-      <div class="actions">
-        <button id="themeToggle" aria-label="切换主题">🌙</button>
-        <button id="navToggle" class="nav-toggle" aria-label="打开菜单">☰</button>
-      </div>
-    </div>
-  </header>
-
-  <main id="home">
-    <section class="hero">
-      <div class="container hero-inner">
-        <h1>漂亮且互动的静态网站模板</h1>
-        <p>基于纯 HTML/CSS/JS 的响应式示例，包含主题切换、画廊、表单验证、本地存储示例等。</p>
-        <div class="hero-cta">
-          <a class="btn" href="#features">开始使用</a>
-          <a class="btn ghost" href="#gallery">查看画廊</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="features" class="container features">
-      <h2>主要功能</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>响应式布局</h3>
-          <p>导航与内容在手机、平板和桌面上自动适配。</p>
-        </article>
-        <article class="card">
-          <h3>主题切换</h3>
-          <p>支持浅色/深色主题，并保存用户偏好。</p>
-        </article>
-        <article class="card">
-          <h3>本地存储示例</h3>
-          <p>表单与待办事项会存储在浏览器 localStorage 中，刷新也不会丢失。</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="gallery" class="container gallery">
-      <h2>图片画廊</h2>
-      <div class="grid">
-        <img src="https://picsum.photos/id/1015/600/400" alt="示例1" data-full="https://picsum.photos/id/1015/1200/800" />
-        <img src="https://picsum.photos/id/1016/600/400" alt="示例2" data-full="https://picsum.photos/id/1016/1200/800" />
-        <img src="https://picsum.photos/id/1025/600/400" alt="示例3" data-full="https://picsum.photos/id/1025/1200/800" />
-        <img src="https://picsum.photos/id/1033/600/400" alt="示例4" data-full="https://picsum.photos/id/1033/1200/800" />
-      </div>
-    </section>
-
-    <section class="container todo">
-      <h2>待办示例</h2>
-      <div class="todo-inner">
-        <form id="todoForm">
-          <input id="todoInput" placeholder="添加待办，回车提交" />
-        </form>
-        <ul id="todoList"></ul>
-      </div>
-    </section>
-
-    <section id="contact" class="container contact">
-      <h2>联系我</h2>
-      <form id="contactForm" novalidate>
-        <div class="form-row">
-          <label>姓名<input type="text" id="name" required /></label>
-          <label>邮箱<input type="email" id="email" required /></label>
-        </div>
-        <div class="form-row">
-          <label class="full">信息<textarea id="message" rows="5" required></textarea></label>
-        </div>
-        <div class="form-row actions-row">
-          <button type="submit" class="btn">发送</button>
-          <button type="button" id="clearContacts" class="btn ghost">清除保存</button>
-        </div>
-        <div id="formMessage" class="form-message" aria-live="polite"></div>
-      </form>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 MySite — 示例演示页面</p>
-    </div>
-  </footer>
-
-  <!-- Lightbox Modal -->
-  <div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true">
-    <button id="lbClose" class="lb-close" aria-label="关闭">✕</button>
-    <img id="lbImage" alt="预览图" />
-    <div id="lbCaption" class="lb-caption"></div>
+  <div class="container">
+    <h2>免费云</h2>
+    <h2>Windows8.1</h2>
+    <div class="copy-box" id="copyText">localhost:5009</div>
+    <button class="copy-btn" onclick="copyContent()">复制</button>
+    <div class="copied-tip" id="copiedTip">已复制！</div>
+    <h2>请使用VNC</h2>
+    <h2>Windows server 2012R2</h2>
+    <div class="copy-box" id="copyText">39.108.127.56</div>
+    <button class="copy-btn" onclick="copyContent()">复制</button>
+    <div class="copied-tip" id="copiedTip">已复制！</div>
+    <h2>请使用Windows app</h2>
+    <h2>密码111</h2>
+    <h2>账户名111</h2>
   </div>
-
-  <script src="script.js"></script>
+  </script>
 </body>
 </html>
